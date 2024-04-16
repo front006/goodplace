@@ -1,0 +1,118 @@
+.distance {
+    position: relative;
+}
+
+.distance-header {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 35%;
+    background-image: url(../img/image.png);
+    background-size: cover;
+    padding-top: 90px;
+    padding-bottom: 90px;
+
+    @media (max-width: 991px) {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color:  rgba(200, 210, 243, 0.9);
+        box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.distance-header .section-title {
+    position: relative;
+    z-index: 9;
+    text-align: center;
+    width: 100%;
+}
+
+.distance-icon {
+    position: relative;
+    width: 60px;
+}
+
+.distance-benifits__wrapper {
+    display: flex;
+    align-items: center;
+    height: 65%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    @media (max-width: 991px) {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+}
+
+.distance-benifits {
+    gap: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    @media (max-width: 1199px) {
+      gap: 50px;
+    }
+
+    @media (max-width: 991px) {
+      grid-template-columns: repeat(1, 100%);
+    }
+}
+
+.benifits-card {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.benifits-title {
+    font-size: 39px;
+    margin-bottom: 20px;
+    text-align: center;
+    min-height: 93px;
+
+    @media (max-width: 991px) {
+      min-height: unset;
+      font-size: 30px;
+    }
+}
+
+.benifits-icon {
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 40px;
+
+    @media (max-width: 991px) {
+      height: 60px;
+      margin-bottom: 16px;
+    }
+
+    & img {
+        height: 100%;
+        width: auto;
+    }
+}
+
+.benifits-list {
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.benifits-list li:not(:last-child) {
+    margin-bottom: 20px;
+
+    @media (max-width: 991px) {
+      margin-bottom: 10px;
+    }
+}

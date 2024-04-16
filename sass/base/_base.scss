@@ -1,0 +1,121 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    border: 0;
+    font-family: inherit;
+    font-size: inherit;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+section {
+    position: relative;
+    border-bottom: 1px solid #cecece;
+    min-height: 800px;
+
+    @media (max-width: 991px) {
+      min-height: unset;
+    }
+}
+
+.container {
+    width: 100%;
+    max-width: 1530px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+
+    @media (max-width: 1919px) {
+        width: 80%;
+    }
+
+    @media (max-width: 1199px) {
+      width: 100%;
+    }
+}
+
+.flex-container {
+    display: flex;
+
+    @media (max-width: 991px) {
+      flex-direction: column;
+    }
+}
+
+.section-title {
+    font-size: clamp(1.375rem, 0.488rem + 4.44vw, 4.813rem);
+    font-weight: 400;
+    text-transform: uppercase;
+
+    @media (max-width: 991px) {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+}
+
+.section-logo {
+    position: absolute;
+    left: -145px;
+    bottom: 0;
+    transform: rotate(-90deg) translateX(45%);
+    font-size: 40px;
+    padding-left: 145px;
+
+    &::before {
+        position: absolute;
+        left: 0;
+        content: "";
+        width: 130px;
+        display: block;
+        height: 5px;
+        background-color: black;
+        top: 23px;
+    }
+
+    @media (max-width: 1199px) {
+        display: none;
+    }
+}
+
+.btn {
+    padding: 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}

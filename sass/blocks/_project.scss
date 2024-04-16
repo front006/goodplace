@@ -1,0 +1,138 @@
+.project{
+  position: relative;
+  display: flex;
+  min-height: 1000px;
+
+   @media (max-width: 1199px) {
+     padding-top: 30px;
+   }
+}
+
+.project-content{
+    display: flex;
+    column-gap: 70px;
+
+    @media (max-width: 991px) {
+      flex-direction: column;
+      align-items: center;
+    }
+}
+
+.mb40 {
+  margin-bottom: 40px;
+}
+
+.project-about-list {
+  font-size: 40px;
+
+  & p {
+    font-size: 32px;
+
+    @media (max-width: 1199px) {
+      font-size: 26px;
+    }
+  }
+}
+
+.project-about-list .visible-mobile {
+  display: none;
+
+  @media (max-width: 1919px) {
+    display: block;
+  }
+}
+
+
+.project-about-list span {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 32px;
+  font-weight: 700;
+
+  @media (max-width: 1199px) {
+    font-size: 26px;
+  }
+}
+
+.project-about-list li + li {
+  margin-top: 40px;
+
+  @media (max-width: 1199px) {
+    margin-top: 24px;
+  }
+}
+
+.project-images{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 25px;
+    width: 400px;
+    flex-shrink: 0;
+    background-color: rgb(232, 245, 223);
+
+    @media (max-width: 991px) {
+      background-color: transparent;
+    }
+
+    @media (max-width: 767px) {
+      width: 270px;
+    }
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-svg {
+    width: 60px;
+}
+
+.project-text {
+    max-width: 640px;
+    flex-grow: 1;
+    padding-top: 50px;
+    margin-bottom: 110px;
+
+    @media (max-width: 1199px) {
+      margin-bottom: 50px;
+    }
+}
+
+.project-svg {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  z-index: 3;
+
+  @media (max-width: 991px) {
+    display: none;
+  }
+}
+
+.project-add-info {
+  position: absolute;
+  width: 560px;
+  height: 50%;
+  right: 0;
+  bottom: 0;
+  padding: 70px;
+
+  @media (max-width: 1919px) {
+    display: none;
+  }
+}
+
+.add-list {
+  padding: 40px;
+  font-size: 35px;
+}
+
+.add-list li span {
+  font-weight: 700;
+}
+
+.add-list li:not(:last-child) {
+  margin-bottom: 50px;
+}
